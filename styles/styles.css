@@ -1,0 +1,82 @@
+.h1, h1
+{
+    color: yellow;
+    font-size: 9vh;
+    position: relative;
+    animation: 2s h1 infinite linear;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+hr{
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+    height: 200px;
+    overflow: hidden;   
+    position: relative;
+    border-right: none;
+    border-bottom: none;
+}
+hr:after{
+    position: absolute;
+    content: '';
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+    -webkit-transform: skewY(30deg) skew(30deg);
+    -moz-transform: skewY(30deg) skew(30deg);
+    transform: skewY(30deg) skew(30deg);
+    -webkit-transform-origin: left top;
+    -moz-transform-origin: left top;
+    transform-origin: left top;
+}
+hr:before{
+    position: absolute;
+    content: '';
+    top: 0px;
+    left: 0px;
+    height: 30px;
+    width: 36px;
+    border-radius: 50%;
+    border-top: 2px solid;
+    -webkit-transform: translate(20px, 26px) rotate(-45deg);
+    -moz-transform: translate(20px, 26px) rotate(-45deg);
+    transform: translate(20px, 26px) rotate(-45deg);
+    box-shadow: 0 3px 5px #333, 0 3px 5px #333,0 3px 5px #333, 0 3px 5px #333, 0 3px 5px #333, 0 3px 5px #333, 0 3px 5px #333, 0 3px 5px #333, 0 3px 5px #333, 0 3px 5px #333, 0 3px 5px #333;
+}
+
+h2, h3
+{
+    color: yellow;
+}
+
+@keyframes h1
+{
+    0% {opacity: 0.0}
+  4% {opacity: 1.0}
+  33.33% {opacity: 1.0}
+  37.33% {opacity: 0.0}
+  100% {opacity: 0.0}
+}
+
+#player
+{
+    width: 36vh;
+    height: 7vh;
+    padding-top: 2vh;
+}
+
+body
+{
+    background-image: url('../images/spooky.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    height: 100%;
+    min-height: 100vh;
+}
