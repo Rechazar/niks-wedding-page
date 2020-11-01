@@ -1,7 +1,7 @@
 .h1, h1
 {
     color: yellow;
-    font-size: 9vh;
+    font-size: 8vh;
     position: relative;
     animation: 2s h1 infinite linear;
     top: 0;
@@ -12,7 +12,7 @@
 hr{
     border-left: 2px solid black;
     border-top: 2px solid black;
-    height: 200px;
+    height: 12vw;
     overflow: hidden;   
     position: relative;
     border-right: none;
