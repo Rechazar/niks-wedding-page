@@ -78,5 +78,20 @@ body
     background-position: center;
     position: relative;
     height: 100%;
-    min-height: 100vh;
+    max-height: 100%;
+}
+
+
+@media (max-width: 720px)
+{
+    body
+    {
+    background-image: url('../images/spooky.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    height: 100%;
+    max-height: 100%;
+    }
 }
